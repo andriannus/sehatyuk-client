@@ -1,45 +1,54 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github-circle"
-      >
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub</a>
-      </card>
+  <div>
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Selamat Datang di Website SEHAT YUK
+          </h1>
 
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">Every</b> component is responsive
-      </card>
+          <p class="subtitle">
+            Apa yang ingin Anda lihat?
+          </p>
 
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">Vue.js</a> and <a href="http://bulma.io/">Bulma</a>
-      </card>
+          <div class="columns is-mobile">
+            <div class="column is-6 is-offset-3">
+              <div class="columns">
+                <div class="column">
+                  <router-link
+                    class="button is-success is-inverted is-fullwidth"
+                    to="puskesmas"
+                  >
+                    Puskesmas
+                  </router-link>
+                </div>
 
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
-    </div>
-  </section>
+                <div class="column">
+                  <router-link
+                    class="button is-success is-inverted is-fullwidth"
+                    to="rsk"
+                  >
+                    RS Khusus
+                  </router-link>
+                </div>
+
+                <div class="column">
+                  <router-link
+                    class="button is-success is-inverted is-fullwidth"
+                    to="rsu"
+                  >
+                    RS Umum
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-import Card from '~/components/Card'
-
-export default {
-  name: 'HomePage',
-
-  components: {
-    Card
-  }
-}
+export default { }
 </script>
