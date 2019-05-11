@@ -24,14 +24,18 @@
         </a>
       </div>
 
-      <div class="navbar-menu" :class="{ 'is-active': isActive }">
+      <div
+        :class="{ 'is-active': isActive }"
+        class="navbar-menu"
+      >
         <div class="navbar-start">
           <div class="navbar-item">
             <div class="field is-grouped">
               <p class="control">
                 <a
-                  href="https://github.com/andriannus/sehatyuk-spa"
+                  href="https://github.com/andriannus/sehatyuk-client"
                   class="button is-dark"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <span class="icon">
@@ -46,19 +50,31 @@
         </div>
 
         <div class="navbar-end">
-          <router-link class="navbar-item" to="/">
+          <router-link
+            class="navbar-item"
+            to="/"
+          >
             Beranda
           </router-link>
 
-          <router-link class="navbar-item" to="puskesmas">
+          <router-link
+            class="navbar-item"
+            to="puskesmas"
+          >
             Puskesmas
           </router-link>
 
-          <router-link class="navbar-item" to="rsk">
+          <router-link
+            class="navbar-item"
+            to="rsk"
+          >
             Rumah Sakit Khusus
           </router-link>
 
-          <router-link class="navbar-item" to="rsu">
+          <router-link
+            class="navbar-item"
+            to="rsu"
+          >
             Rumah Sakit Umum
           </router-link>
         </div>
@@ -69,9 +85,11 @@
 
 <script>
 export default {
-  data: () => ({
-    isActive: false
-  }),
+  data() {
+    return {
+      isActive: false
+    }
+  },
 
   methods: {
     switchMenu() {
