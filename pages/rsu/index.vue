@@ -1,5 +1,5 @@
 <template>
-  <div id="rsu">
+  <div id="container">
     <!-- Tampilan Loading -->
     <b-loading
       :active="loading"
@@ -245,45 +245,7 @@
         @click="reset"
       />
     </div>
-
-    <back-to-top
-      v-if="!isActive"
-      visibleoffset="800"
-      bottom="50px"
-      right="50px"
-    >
-      <button class="button is-dark is-large">
-        <i class="fas fa-chevron-circle-up" />
-      </button>
-    </back-to-top>
   </div>
 </template>
 
 <script src="./index.js"></script>
-
-<style>
-#rsu {
-  min-height: 92vh;
-}
-
-.m-t-52 {
-  margin-top: 52px;
-}
-
-.m-t-20 {
-  margin-top: 20px;
-}
-
-.maps {
-  z-index: 1000;
-}
-
-.maps-card {
-  height: 75vh;
-  overflow: hidden;
-}
-
-.card-content {
-  word-break: break-all;
-}
-</style>
