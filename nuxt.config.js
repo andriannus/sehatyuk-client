@@ -64,9 +64,6 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/robots',
     ['@nuxtjs/google-analytics', {
-      autoTracking: {
-        pageviewOnLoad: false
-      },
       dev: false,
       id: 'UA-76380242-5'
     }],
