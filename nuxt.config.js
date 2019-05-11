@@ -40,6 +40,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '@/assets/style/app.scss'
   ],
 
   /*

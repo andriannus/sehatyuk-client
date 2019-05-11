@@ -1,0 +1,26 @@
+#container {
+  min-height: 92vh;
+}
+
+.card-content {
+  word-break: break-all;
+}
+
+.m-t {
+  &-20 {
+    margin-top: 20px;
+  }
+
+  &-52 {
+    margin-top: 52px;
+  }
+}
+
+.maps {
+  z-index: 1000;
+
+  &-card {
+    height: 75vh;
+    overflow: hidden;
+  }
+}
