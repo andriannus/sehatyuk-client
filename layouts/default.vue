@@ -6,7 +6,6 @@
 
     <no-ssr>
       <back-to-top
-        v-if="!isActive"
         bottom="50px"
         right="50px"
         visibleoffset="800"
