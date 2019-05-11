@@ -25,6 +25,13 @@ module.exports = {
   },
 
   /*
+  ** Router configuration
+  */
+  router: {
+    linkExactActiveClass: 'is-active'
+  },
+
+  /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
@@ -39,6 +46,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src: '@/plugins/vue-backtotop',
+      ssr: false
+    }
   ],
 
   /*
@@ -50,6 +61,7 @@ module.exports = {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy'
   ],
+
   /*
   ** Axios module configuration
   */
