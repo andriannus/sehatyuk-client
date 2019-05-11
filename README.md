@@ -1,4 +1,4 @@
-# sehatyuk-client
+# Sehat Yuk - Client
 
 > Client for Sehat Yuk Web App
 
@@ -18,3 +18,7 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
+
+## Sever
+
+For server, please visit [Sehat Yuk - Server](https://github.com/andriannus/sehatyuk-server)
