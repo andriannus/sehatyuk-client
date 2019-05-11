@@ -23,8 +23,42 @@
 import Navigation from '../components/Navigation.vue'
 
 export default {
-  name: 'Header',
-
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'og:image',
+          content: 'https://sehatyuk.netlify.com/logo.png',
+          property: 'og:image'
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: 'Sehat Yuk'
+        },
+        {
+          hid: 'og:type',
+          name: 'og:type',
+          content: 'site.personal'
+        },
+        {
+          hid: 'twitter:card',
+          content: 'summary_large_image',
+          name: 'twitter:card'
+        },
+        {
+          hid: 'twitter:image',
+          content: 'https://sehatyuk.netlify.com/logo.png',
+          name: 'twitter:image'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: 'Sehat Yuk'
+        }
+      ]
+    }
+  },
   components: {
     Navigation
   }

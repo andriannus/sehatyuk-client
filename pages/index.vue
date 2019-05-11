@@ -50,5 +50,48 @@
 </template>
 
 <script>
-export default { }
+export default {
+  head() {
+    return {
+      title: 'Temukan instansi kesehatan di DKI Jakarta - Sehat Yuk',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Cari RS Umum, RS Khusus, dan Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'Temukan instansi kesehatan di DKI Jakarta - Sehat Yuk'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Cari RS Umum, RS Khusus, dan Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Temukan instansi kesehatan di DKI Jakarta - Sehat Yuk'
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://sehatyuk.netlify.com/'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Cari RS Umum, RS Khusus, dan Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Temukan instansi kesehatan di DKI Jakarta - Sehat Yuk'
+        }
+      ]
+    }
+  }
+}
 </script>

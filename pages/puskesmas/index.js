@@ -1,4 +1,47 @@
 export default {
+  head() {
+    return {
+      title: 'Puskesmas - Sehat Yuk',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Cari Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'Puskesmas - Sehat Yuk'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Cari Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Puskesmas - Sehat Yuk'
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://sehatyuk.netlify.com/puskesmas'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Cari Puskesmas di daerah DKI Jakarta'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Puskesmas - Sehat Yuk'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       count: '',

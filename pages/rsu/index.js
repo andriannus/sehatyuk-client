@@ -1,4 +1,47 @@
 export default {
+  head() {
+    return {
+      title: 'Rumah Sakit Umum - Sehat Yuk',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Cari Rumah Sakit Umum di daerah DKI Jakarta'
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'Rumah Sakit Umum - Sehat Yuk'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Cari Rumah Sakit Umum di daerah DKI Jakarta'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Rumah Sakit Umum - Sehat Yuk'
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://sehatyuk.netlify.com/rsu'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Cari Rumah Sakit Umum di daerah DKI Jakarta'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Rumah Sakit Umum - Sehat Yuk'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       count: '',
