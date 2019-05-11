@@ -62,6 +62,14 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/robots',
+    ['@nuxtjs/google-analytics', {
+      autoTracking: {
+        pageviewOnLoad: false
+      },
+      dev: false,
+      id: 'UA-76380242-5'
+    }],
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy'
   ],
