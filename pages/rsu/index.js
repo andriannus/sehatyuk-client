@@ -93,22 +93,17 @@ export default {
         }
       })
 
-      if (this.newRsus.length < 1) {
-        this.found = false
-      } else {
-        this.found = true
-      }
-
+      this.found = this.newRsus.length > 1
       this.loading = false
 
       if (page) {
         const res = this.paginator(this.newRsus, page, 5)
         this.pagRsus.data.push(...res.data)
         this.nextPage = res.nextPage
-      } else {
-        this.pagRsus = this.paginator(this.newRsus, 1, 5)
-        this.nextPage = this.pagRsus.nextPage
       }
+
+      this.pagRsus = this.paginator(this.newRsus, 1, 5)
+      this.nextPage = this.pagRsus.nextPage
     },
 
     // Membuat Pagination

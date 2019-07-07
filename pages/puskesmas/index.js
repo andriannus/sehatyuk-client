@@ -93,22 +93,17 @@ export default {
         }
       })
 
-      if (this.newPuskesmases.length < 1) {
-        this.found = false
-      } else {
-        this.found = true
-      }
-
+      this.found = this.newPuskesmases.length > 1
       this.loading = false
 
       if (page) {
         const res = this.paginator(this.newPuskesmases, page, 5)
         this.pagPuskesmases.data.push(...res.data)
         this.nextPage = res.nextPage
-      } else {
-        this.pagPuskesmases = this.paginator(this.newPuskesmases, 1, 5)
-        this.nextPage = this.pagPuskesmases.nextPage
       }
+
+      this.pagPuskesmases = this.paginator(this.newPuskesmases, 1, 5)
+      this.nextPage = this.pagPuskesmases.nextPage
     },
 
     // Membuat Pagination
